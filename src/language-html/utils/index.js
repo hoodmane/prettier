@@ -107,6 +107,7 @@ function isScriptLikeTag(node) {
   return (
     node.type === "element" &&
     (node.fullName === "py-script" ||
+      node.fullName === "py-config" ||
       node.fullName === "script" ||
       node.fullName === "style" ||
       node.fullName === "svg:style" ||
