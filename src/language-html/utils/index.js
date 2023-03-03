@@ -106,7 +106,8 @@ function isTextLikeNode(node) {
 function isScriptLikeTag(node) {
   return (
     node.type === "element" &&
-    (node.fullName === "script" ||
+    (node.fullName === "py-script" ||
+      node.fullName === "script" ||
       node.fullName === "style" ||
       node.fullName === "svg:style" ||
       (isUnknownNamespace(node) &&
